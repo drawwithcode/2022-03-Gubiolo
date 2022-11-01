@@ -75,13 +75,13 @@ function draw() {
 
     if (mic) {
     const micLevel = mic.getLevel();
-    let g = map(micLevel, 0, 1, 25, 50)
+    let g = map(micLevel, 0, 1, 25, 70)
       textSize(g);
       console.log(g);
-    t = "Billone, ora puoi parlare!";
+    t = "Billone, now you can talk!";
     text(t, width / 2, height - 100);}
 
-  }
+  } else {colorbg = "#ff1c64"; }
 //variable control, if the enter key was pressed then the text will be displayed
     if (check == 0) {
     textSize(20)
